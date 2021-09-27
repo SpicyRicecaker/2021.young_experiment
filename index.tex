@@ -54,14 +54,14 @@ urlcolor=cyan,
 % \usepackage{indentfirst}
 
 \begin{document}
-\title{Young's Experiment Lab Conclusion (ADD UNCERTAINTY TO GRAPH)}
+\title{Young's Experiment Lab Conclusion}
 \author{by Shengdong Li}
 \date{28 September 2021}
 \maketitle
 
 \section{Research Question}
 
-What happened in Young's Double-Slit Experiment?
+How did Young calculate the wavelength of light in his Double-Slit Experiment?
 
 \section{Purpose}
 
@@ -82,8 +82,14 @@ In this lab, all variables were kept constant.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{sketch.png}
-	\caption{Sketch of double-slit diffraction}
+\includegraphics[scale=0.57]{diagram.png}
+\caption{Sketch of experiment setup}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{sketch.png}
+\caption{Diagram of simplified double-slit diffraction}
 \end{figure}
 
 \section{Materials List}
@@ -119,7 +125,7 @@ In this lab, all variables were kept constant.
 	\def\arraystretch{1.5}
 	\resizebox{\textwidth}{!}{\begin{tabular}{lllll}
 			\hline
-			Distance slit-slit (m) & Distance n-n (m) & Order & Distance light-screen (m) \\
+Distance slit-slit (m) & Distance n-n (m) \(\pm 0.005\) & Order & Distance light-screen (m) \(\pm 0.005\)\\
 			\hline
 			0.000176               & 0.08             & 3     & 4.14
 		\end{tabular}}
@@ -175,7 +181,7 @@ And since \(\tan\theta=\theta\), and \(\tan\) is opposite over adjacent in the f
 	\def\arraystretch{1.5}
 	\resizebox{\textwidth}{!}{\begin{tabular}{lllll}
 			\hline
-			Distance slit-slit (m) & Distance n-n (m) & Order & Distance light-screen (m) & Wavelength of Light (m) \\
+Distance slit-slit (m) & Distance n-n (m) \(\pm 0.005\) & Order & Distance light-screen (m) \(\pm 0.005\) & Wavelength of Light (m) \(\pm 0.06\) \\
 			\hline
 			0.000176               & 0.08             & 3     & 4.14                      & \(5.67 \cdot 10^{-7}\)
 		\end{tabular}}
@@ -192,34 +198,32 @@ And since \(\tan\theta=\theta\), and \(\tan\) is opposite over adjacent in the f
 \end{itemize}
 
 \section{Conclusion}
-The distance the car gravity car travels is constant as the mass of the car increases. This is because, while the line of best fit has a slightly positive relationship, its slope is very low at \(0.04\) and the points fluctuate around and have high uncertainty. This is further supported by the fact that one gradient line has a slope of \(0\). At a mass of \(116g\), the car traveled an average distance of around \(171.5cm\), but from masses \(145-165\) the distance the car traveled was slightly less than the beginning, an average of \(166cm\). Only at a mass of \(174g\) did the car begin to have a slightly increased average distance of \(172cm\), but this was almost the same distance traveled as the very first trial. This goes against the original hypothesis that the car would travel less distance as mass increases. This nondifference can be explained by Newton's First and Second Laws of motion.
 
-Upon closer inspection of the forces at work, it can be seen that there are two distinct phases of forces acting on the gravity car: when the car goes down the ramp, and when the car is traveling on the ground after it has accelerated on the ramp. On the ramp, there is a greater force pushing on the gravity car with more Scrabble pieces, since the \(x\) component of the weight force is dependent on mass \(w_x = w\sin(\theta)\). But the thing is, even though there is a bigger force acting on the bigger car, the smaller car and the bigger car both move down the ramp at the same speed. Newton's Second law of motion states acceleration is proportional to force but inversely proportional to mass, such that that \(a=\frac{F}{m}\). When the weight component is substituted into the equation, in the resulting equation the masses cancel.
-\begin{align*}
-	\sum F_x  & = w\sin(\theta)            \\
-	ma        & = mg\sin(\theta)           \\
-	a         & = \frac{mg\sin(\theta)}{m} \\
-	\Aboxed{a & =g\sin(\theta)}
-\end{align*}
-A greater force or push does not equal greater acceleration in this case. Both heavy and light cars reach the bottom of the ramp at the same speed.
+After going through the experiment, I now understand how Young used diffraction by creating two double slits to calculate the wavelength of light. By using basic geometry and what he knew about the wavelength of light, he measured the distance from the screen to the light, the distance between two slits, the order of fringes, as well as the distance from the center to the outer fringe to calculate the wavelength of light.
 
-Then, when the gravity car is moving on level ground, the only horizontal force is kinetic friction pulling the car back.
-\begin{align*}
-	\sum F_{x} & =-F_{k}            \\
-	           & =-u_{k}\cdot F_{N} \\
-	           & =-u_{k}\cdot mg
-\end{align*}
-In this case, a heavier car would result in a greater kinetic friction force backward. But if Newton's second law is applied again it can be seen that the decrease in acceleration of both cars is equal once again
-\begin{align*}
-	\sum F_{x} & =ma             \\
-	ma         & =-u_{k}\cdot mg \\
-	\Aboxed{a  & =-u_{k}\cdot g}
-\end{align*}
-It all goes back to Newton's first law of motion, that heavier objects have more inertia and so require more forces to both stop and move.
+I also confirmed this by seeing that the distance between the two slits affected the wavelength of light greatly. When I looked through the narrower slit, the distance distance between light and dark fringes got wider. This makes sense, as looking at the derived equation
+$$
+	\lambda      =\frac{dy}{mL}                                                                           \\
+$$
+\(d\) and \(y\) seem to have an inversely proportional relationship as they are both on the numerator of the fraciton.
 
 \section{Evaluation of Strengths and Weaknesses}
-Because this was an experiment done at home due to quarantine, there were many limitations and possible sources of error in the experiment. One such source of error was the horizontal positioning of the gravity car on the ramp. While the height of the car on the ramp was part of the control variables, the width of the ramp made it much harder to position the car correctly horizontally every time. While by itself this might not have been much of an issue, the other problem was that the floorboards were uneven. Sometimes, if the car was positioned a couple of centimeters to the left it would bump into more crevices in the floorboards, resulting in a lower distance traveled. While the material of the floor should've stayed the same, it ultimately could've caused the large uncertainty and fluctuations in the data table. Another source of error was that the axle of the car was partially broken, so it would sometimes veer slightly to the right. This would've resulted in some of the measured distances traveled being lower than they should've been.
+This experiment had a huge number of flaws. According to literature, the actual wavelength of red light is around $700$ nanometers, which is around \(7\cdot10^{-7}\) meters. This meant that the answer our group measured was off by around $1.33\cdot 10^{-7}$ meters, an error of around \(19\%\)!
+
+The biggest cause of this would probably be the measure of the number of light and dark fringes. Because the lens of the slits might have been touched by fingers and thus become oily, it was extremely difficult to count the warped lines of the dark and light fringes. When we recorded our order of $m=3$, it was more like $m=$ 2--4, with some extra error on where the paper slips were put. This makes sense, as working back from the actual wavelength of \(\lambda=7\cdot10^{-7} m\), and setting $m$ as an unknown like so:
+
+\begin{align*}
+7\cdot10^{-7}\ m & =\frac{\left(0.000176\ m\right)\left(0.04\ m\right)}{\left(4.14\ m\right)\left(M\right)}                \\
+M                & =\frac{\left(0.000176\ m\right)\left(0.04\ m\right)}{\left(4.14\ m\right)\left(7\cdot10^{-7}\ m\right)} \\
+M                & =\boxed{2.43}
+\end{align*}
+
+We get the order $M=2.43$, which isn't so far off from what one would expect looking into a very distorted double-slit lens.
 
 \section{Improvements}
-Many things could be done in the future to address the car issues. One is to buy a new toy car that isn't broken, so it doesn't veer to the right. To address the issue of the horizontal alignment of the car causing the uneven material of the wooden floorboards to have an impact on the garage floor could've been used. Another thing that could be done is to mark a specific spot on the ramp to always position the car correctly on the ramp.
+The best way to prevent greasy oil stains from distorting lens would just be to not use alens at all. The whole experiment in itself was not actually measuring the diffraction patterns on the screen, as a result of diffraction of the light source, but measuring the patterns on the cornea of the naked eye, and having the light shine on the screen of the eye through the double slit.
+
+Using a finer and steadier light like the lazer pointer through a double slit would make it so that the experiment is actually measuring the real diffracted pattern of the light on a screen, and it would be much easier to read as the person measuring would be able to walk closer and more closely align the paper slips to the diffraction pattern. In other words, everyone would be able to see the diffraction pattern, at whatever distance they choose, rather than the one getting their eyeballs blasted by the diffraction pattern.
+
+Another source of improvement could possibly be to dim the room even further, or move to an area with less light pollution, as sometimes with many experiments going on in close proximity, the lights clashed and it was harder to make out the outlines of the dark and light fringes and thus was harder to determine the number and order of the fringes.
 \end{document}
